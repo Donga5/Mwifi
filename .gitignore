@@ -1,6 +1,7 @@
 .DS_Store
 .build/
 .swiftpm/
+.playwright-mcp/
 dist/
 *.xcuserstate
 xcuserdata/

@@ -3,7 +3,7 @@
   <h1>Mwifi</h1>
   <p>在 macOS 菜单栏查看 Wi-Fi 网速、流量与移动 WiFi 电量。</p>
   <p><strong>macOS 13+ · Apple Silicon · 原生 SwiftUI · 本地存储</strong></p>
-  <p><a href="https://github.com/Donga5/Mwifi/releases/latest">下载安装包</a> · <a href="#安装与更新">安装说明</a> · <a href="#隐私与数据">隐私与数据</a> · <a href="https://github.com/Donga5/Mwifi/issues">反馈问题</a></p>
+  <p><a href="https://donga5.github.io/Mwifi/">应用主页与截图</a> · <a href="https://github.com/Donga5/Mwifi/releases/latest">下载安装包</a> · <a href="#安装与更新">安装说明</a> · <a href="#隐私与数据">隐私与数据</a> · <a href="https://github.com/Donga5/Mwifi/issues">反馈问题</a></p>
 </div>
 
 Mwifi 是一个轻量的 macOS 菜单栏应用：连接普通 Wi-Fi 或手机热点时，查看 Mac 的实时网速和累计流量；连接支持的中兴 U30 Air 时，还可查看设备电量、充电状态与运营商，并接收电量提醒。
@@ -202,6 +202,20 @@ GET http://192.168.0.1/goform/goform_get_cmd_process
 加入 SQLite 持久化流量统计、月度汇总、网络筛选与每日柱状图。后续维护中完善了通知失败重试和本月统计范围说明。
 
 ## 发布约定
+
+### 项目网站
+
+应用介绍与截图位于 [Mwifi 主页](https://donga5.github.io/Mwifi/)，使用 GitHub Pages 从 `main` 分支的 `/docs` 目录自动发布。网站使用纯 HTML、CSS 和 JavaScript，无需安装前端依赖。
+
+本地预览：
+
+```bash
+python3 -m http.server 8765 --bind 127.0.0.1 --directory docs
+```
+
+然后在浏览器打开 `http://127.0.0.1:8765/`。修改 `docs/` 并推送到 `main` 后，GitHub 会更新网站。截图复用原生 SwiftUI 界面并使用演示数据，来源说明见 `docs/assets/README.md`。发布新的应用版本时，需要同步更新网页中的版本说明；主要下载按钮始终指向最新 Release。
+
+### 应用版本
 
 使用 `MAJOR.MINOR.PATCH` 版本号；每次发布同步更新 `CFBundleShortVersionString`、递增的 `CFBundleVersion`、README 和产物名称。测试、构建、签名与安装包检查通过后，创建对应的 annotated tag `v<版本号>`。
 

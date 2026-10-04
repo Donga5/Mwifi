@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mwifi 是原生 macOS 菜单栏工具，查看 Wi-Fi 实时网速、每日与月度流量，以及兼容中兴 U30 Air 的电量与充电提醒。">
+  <meta name="theme-color" content="#f7f8fa">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mwifi · 你的 Wi-Fi，一眼就明白。">
+  <meta property="og:description" content="网速、流量、移动 WiFi 电量。常用的信息，安静地留在 Mac 菜单栏。">
+  <meta property="og:url" content="https://donga5.github.io/Mwifi/">
+  <meta property="og:image" content="https://donga5.github.io/Mwifi/assets/app-icon.png">
+  <link rel="canonical" href="https://donga5.github.io/Mwifi/">
+  <link rel="icon" href="assets/app-icon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+  <title>Mwifi · 你的 Wi-Fi，一眼就明白。</title>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到主要内容</a>
+  <header class="site-header container">
+    <a class="brand" href="./" aria-label="Mwifi 首页">
+      <img src="assets/app-icon.png" width="38" height="38" alt="">
+      <span>Mwifi</span>
+    </a>
+    <a class="github-link" href="https://github.com/Donga5/Mwifi">
+      <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path fill="currentColor" d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.08c-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.73 1.16 1.73 1.16 1 1.72 2.63 1.22 3.27.94.1-.73.39-1.22.71-1.5-2.5-.28-5.12-1.25-5.12-5.55 0-1.23.44-2.23 1.15-3.02-.12-.28-.5-1.43.11-2.98 0 0 .94-.3 3.08 1.15a10.75 10.75 0 0 1 5.6 0c2.14-1.45 3.07-1.15 3.07-1.15.61 1.55.23 2.7.12 2.98a4.36 4.36 0 0 1 1.14 3.02c0 4.31-2.62 5.26-5.13 5.54.4.35.76 1.03.76 2.08v3.08c0 .3.2.65.77.54A11.2 11.2 0 0 0 12 .8Z"/></svg>
+      GitHub <span aria-hidden="true">↗</span>
+    </a>
+  </header>
+
+  <main id="main-content">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> 为你的 Mac，添一点清晰</p>
+        <h1 id="hero-title">你的 Wi-Fi，<br><span>一眼就明白。</span></h1>
+        <p class="hero-description">网速、流量、移动 WiFi 电量。<br>常用的信息，安静地留在菜单栏。</p>
+        <a class="button primary" href="https://github.com/Donga5/Mwifi/releases/latest">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 16v4h14v-4"/></svg>
+          下载 Mac 版
+        </a>
+        <p class="download-meta"><a href="https://github.com/Donga5/Mwifi/releases/tag/v1.5.4">v1.5.4</a><span>macOS 13+</span><span>Apple Silicon</span></p>
+        <nav class="section-nav" aria-label="页面导航">
+          <a href="#features">看看它能做什么 <span aria-hidden="true">↓</span></a>
+          <a href="#install">安装说明</a>
+        </nav>
+      </div>
+      <figure class="hero-visual">
+        <div class="menu-stage">
+          <div class="stage-label"><span class="small-line" aria-hidden="true"></span> 一次点击，掌握当前状态</div>
+          <a class="screenshot-link menu-shot" href="assets/menu.png" data-lightbox data-caption="Mwifi 菜单弹窗：真实界面，网络名称与数值为演示数据。" aria-label="放大查看 Mwifi 菜单弹窗截图">
+            <img src="assets/menu.png" width="720" height="932" alt="Mwifi 菜单弹窗，展示 68% 电量、实时上传下载速率、今日流量和提醒设置。截图使用演示数据。" fetchpriority="high">
+            <span class="zoom-indicator" aria-hidden="true">＋</span>
+          </a>
+          <span class="stage-note">小小的菜单栏，大致心里有数。</span>
+        </div>
+        <figcaption>真实应用界面 · 演示数据 · 点击可放大</figcaption>
+      </figure>
+    </section>
+
+    <div class="utility-strip container" aria-label="应用特点">
+      <span><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="3" y="3" width="14" height="14" rx="3"/><path d="M3 7h14"/></svg>原生 SwiftUI</span>
+      <span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2 3 5v5c0 4 7 7 7 7s7-3 7-7V5Z"/><path d="m7 9 2 2 4-4"/></svg>数据保存在本机</span>
+      <span><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="7" r="3"/><path d="M4 18v-2a6 6 0 0 1 12 0v2"/></svg>无需注册账号</span>
+      <span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10a7 7 0 0 1 14 0M6 10a4 4 0 0 1 8 0"/><circle cx="10" cy="13" r="1"/></svg>适用于日常 Wi-Fi</span>
+    </div>
+
+    <section class="traffic-section container section" id="features" aria-labelledby="traffic-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 / 流量，看得明白</p><h2 id="traffic-title">今天用了多少，<br>这个月也有数。</h2></div>
+        <p class="section-intro">从此刻的上传下载，到每一天的流量变化。<br class="desktop-only">按月份回看，或只看某一个 Wi-Fi，<br class="desktop-only">让网络使用情况有迹可循。</p>
+      </div>
+      <figure class="traffic-figure">
+        <a class="screenshot-link traffic-shot" href="assets/traffic.png" data-lightbox data-caption="Mwifi 流量统计：2026 年 9 月的演示数据，不代表实际网络性能或使用记录。" aria-label="放大查看 Mwifi 流量统计截图">
+          <div class="window-chrome" aria-hidden="true"><span class="traffic-lights"><i></i><i></i><i></i></span><span>Mwifi · 流量统计</span><span class="chrome-spacer"></span></div>
+          <img src="assets/traffic.png" width="1640" height="1060" alt="流量统计窗口，包含月份切换、网络筛选、上传下载汇总和每日柱状图，使用 2026 年 9 月的演示数据。" loading="lazy">
+          <span class="zoom-indicator" aria-hidden="true">＋</span>
+        </a>
+        <figcaption>真实应用界面，外框仅用于展示。图中网络与数值均为演示数据。</figcaption>
+      </figure>
+      <div class="traffic-facts">
+        <p><strong>每秒采样</strong><span>实时查看本机上传与下载速率</span></p>
+        <p><strong>按网络回看</strong><span>支持月度汇总与每日流量图</span></p>
+        <p><strong>保留 24 个月</strong><span>历史记录保存在本地 SQLite 数据库</span></p>
+      </div>
+      <p class="scope-note">仅统计 Mwifi 运行期间经过本机 Wi-Fi 的数据，不包含其他设备，也不等同于运营商套餐账单。</p>
+    </section>
+
+    <section class="battery-section section" aria-labelledby="battery-title">
+      <div class="container battery-grid">
+        <div class="battery-copy"><p class="eyebrow">02 / 电量，不必惦记</p><h2 id="battery-title">还剩多少电，<br>抬眼就知道。</h2><p>连接兼容的中兴 U30 Air，电量就出现在菜单栏。低电量和充电提醒，让你少打开一次设备后台。</p><span class="compatibility-note">电量功能适用于兼容 U30 Air 固件</span></div>
+        <div class="battery-details">
+          <div class="battery-display" aria-hidden="true"><div class="battery-outline"><div class="battery-fill"></div></div><span>68<small>%</small></span><span class="demo-label">显示示意</span></div>
+          <dl class="reminder-list">
+            <div><dt><span class="reminder-number">20<small>%</small> / 10<small>%</small></span>低电量提醒</dt><dd>默认两级阈值，可在菜单中调整。</dd></div>
+            <div><dt><span class="reminder-number">60<small>%</small></span>充电提醒</dt><dd>每个充电周期首次达到时提醒一次。</dd></div>
+            <div><dt><span class="reminder-number">30<small>秒</small></span>自动重试</dt><dd>读取失败后重新探测，连接成功后恢复定期检查。</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="install-section container section" id="install" aria-labelledby="install-title">
+      <div class="section-heading"><div><p class="eyebrow">03 / 开始使用</p><h2 id="install-title">拖进去，就在菜单栏。</h2></div><p class="section-intro">macOS 13 或更新版本<br>适用于 Apple Silicon Mac</p></div>
+      <ol class="install-steps">
+        <li><span class="step-number">01</span><h3>下载并打开</h3><p>前往 GitHub Release，下载 <a href="https://github.com/Donga5/Mwifi/releases/latest">DMG 安装包</a>并打开。</p></li>
+        <li><span class="step-number">02</span><h3>拖到应用程序</h3><p>把 Mwifi.app 拖入 Applications。更新前先退出正在运行的旧版。</p></li>
+        <li><span class="step-number">03</span><h3>打开，授予权限</h3><p>从应用程序启动，在系统提示时允许位置、本地网络和通知权限。</p></li>
+      </ol>
+      <aside class="signing-note"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v1"/></svg><p><strong>首次打开的小提示</strong>当前安装包使用临时签名，尚未经过 Apple 公证。确认来源后，可在“系统设置 → 隐私与安全性”选择“仍要打开”。<a href="https://support.apple.com/zh-cn/102445">查看 Apple 官方说明 ↗</a></p></aside>
+    </section>
+
+    <section class="faq-section container section" id="questions" aria-labelledby="faq-title">
+      <div class="faq-heading"><p class="eyebrow">还有一点，你可能想知道</p><h2 id="faq-title">简单说清楚。</h2><p>更多使用方法与技术细节，<br>都在 <a href="https://github.com/Donga5/Mwifi#readme">项目 README ↗</a> 中。</p></div>
+      <div class="faq-list">
+        <details><summary>不是中兴 U30 Air，也能使用吗？<span aria-hidden="true">＋</span></summary><p>可以使用本机 Wi-Fi 网速与流量统计，包括手机热点和普通路由器。设备电量和充电提醒需要 U30 Air 的兼容本地接口，其他设备通常会显示“电量不可读取”。</p></details>
+        <details><summary>我的网络和流量数据会上传吗？<span aria-hidden="true">＋</span></summary><p>应用不上传网络名称、设备状态或流量记录，也不包含广告、分析或遥测服务。流量记录保存在本机数据库，设备状态通过局域网读取。<a href="#privacy">了解隐私说明</a>。</p></details>
+        <details><summary>为什么需要位置权限？<span aria-hidden="true">＋</span></summary><p>macOS 通过位置权限控制 Wi-Fi 名称的读取。Mwifi 使用网络名称进行分类和流量归属；未授权时，无法准确区分不同网络。</p></details>
+        <details><summary>支持 Intel Mac 吗？<span aria-hidden="true">＋</span></summary><p>当前提供的安装包为 arm64，仅支持 Apple Silicon。最低系统要求为 macOS 13，暂不提供 Intel 安装包。</p></details>
+        <details><summary>更新会清空已有的流量记录吗？<span aria-hidden="true">＋</span></summary><p>更新时先退出旧版，再替换应用即可。流量数据库单独保存在应用支持目录，替换应用不会主动删除这些记录。</p></details>
+      </div>
+    </section>
+
+    <section class="closing container" aria-labelledby="closing-title"><img src="assets/app-icon.png" width="64" height="64" alt="" loading="lazy"><div><h2 id="closing-title">给菜单栏，添一份明白。</h2><p>Mwifi 1.5.4 · macOS 13+ · Apple Silicon</p></div><a class="button primary" href="https://github.com/Donga5/Mwifi/releases/latest">下载 Mwifi <span aria-hidden="true">↗</span></a></section>
+
+    <section class="privacy-note container" id="privacy" aria-labelledby="privacy-title"><h2 id="privacy-title">隐私说明</h2><p>Mwifi 应用的数据保存在本机。本网站不设置分析、广告或追踪脚本，不读取你的网络信息；演示截图不包含真实使用记录。网站由 GitHub Pages 托管，GitHub 可能为安全目的记录访问 IP，详见 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 隐私声明</a>。</p></section>
+  </main>
+
+  <footer class="site-footer container"><span>Mwifi <span class="footer-dot">·</span> 一个专注于 Wi-Fi 状态的 Mac 小工具</span><nav aria-label="页脚导航"><a href="https://github.com/Donga5/Mwifi">源码</a><a href="https://github.com/Donga5/Mwifi/issues">反馈问题</a><a href="https://github.com/Donga5/Mwifi#安装与更新">使用说明</a><a href="#privacy">隐私</a></nav></footer>
+
+  <dialog class="image-dialog" aria-labelledby="image-caption">
+    <div class="dialog-toolbar"><span>应用截图</span><a class="view-original" href="assets/menu.png" target="_blank" rel="noopener">打开原图 ↗</a><button type="button" class="close-dialog" aria-label="关闭截图">关闭 <span aria-hidden="true">×</span></button></div>
+    <div class="dialog-image-area"><img id="expanded-image" alt=""></div>
+    <p id="image-caption"></p>
+  </dialog>
+</body>
+</html>
