@@ -1,0 +1,25 @@
+.DS_Store
+.build/
+.swiftpm/
+dist/
+*.xcuserstate
+xcuserdata/
+
+# Machine-local settings and credentials must never be published.
+.codex/
+.agents/
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.mobileprovision
+
+# User data and diagnostic output are not source files.
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.log
+*.dSYM/
